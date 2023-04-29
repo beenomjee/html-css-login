@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #04cbfe;
+  --secondary-color: #324e6d;
+  --bg-color: #bef3ff;
+  --white-color: #fff;
+  --black-color: #000;
+  --input-bg-color: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* bg */
+.bg {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg > .top {
+  height: 10vh;
+  background-color: var(--white-color);
+}
+
+.bg > .bottom {
+  height: 90vh;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.bg > .bottom > .circle {
+  width: var(--s);
+  aspect-ratio: 1/1;
+  transform: translateX(var(--x));
+  position: absolute;
+  left: var(--left);
+  right: var(--right);
+  top: var(--top);
+  bottom: var(--bottom);
+}
+
+.bg > .bottom > .circle > img {
+  width: 100%;
+}
+
+/* center */
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+}
+
+.center > h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.center > .box {
+  background-color: var(--white-color);
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
+.center > .box > .formControl > .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center > .box > .formControl > .row > label,
+.center > .box > .formControl > .row > a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.center > .box > .formControl > .row > a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.center > .box > .formControl > .row > a:hover {
+  text-decoration: underline;
+}
+
+.center > .box > .formControl > .row > input {
+  width: 100%;
+  background-color: var(--input-bg-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  border: 1px solid #d3d3d3;
+  padding: 0.8rem 1.6rem;
+  outline: none;
+}
+
+.center > .box > .formControl > .row > input:focus {
+  outline: 1px solid rgba(4, 204, 254, 0.7);
+}
+
+.center > .box > button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+}
+
+.center > .box > button:hover {
+  filter: saturate(1.5);
+}
+
+.center > .bottom {
+  padding: 4rem;
+}
+
+.center > .bottom > .line {
+  height: 0.3rem;
+  width: 100%;
+  background-color: var(--black-color);
+  position: relative;
+}
+
+.center > .bottom > .line > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  padding: 0rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.center > .bottom > a {
+  margin-top: 4rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 1rem;
+  padding: 0.8rem 1.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black-color);
+  background-color: var(--bg-color);
+}
+
+.center > .bottom > a:hover {
+  filter: saturate(4);
+}
+
+@media screen and (max-width: 500px) {
+  .center {
+    width: 40rem;
+  }
+}

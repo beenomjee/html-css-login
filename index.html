@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- bg -->
+    <div class="bg">
+      <div class="top"></div>
+      <div class="bottom">
+        <div style="--top: 2vh; --left: 0; --x: -65%; --s: 40vh" class="circle">
+          <img src="/imgs/circle.svg" alt="circle" />
+        </div>
+        <div
+          style="--top: 14vh; --left: 0; --x: -70%; --s: 35vh"
+          class="circle"
+        >
+          <img src="/imgs/circle.svg" alt="circle" />
+        </div>
+        <div
+          style="--bottom: -5vh; --right: 0; --x: 65%; --s: 45vh"
+          class="circle"
+        >
+          <img src="/imgs/circle.svg" alt="circle" />
+        </div>
+      </div>
+    </div>
+    <!-- center -->
+    <div class="center">
+      <h1>Sign in</h1>
+      <form action="#" class="box">
+        <div class="formControl">
+          <div class="row">
+            <label for="email">Email</label>
+          </div>
+          <div class="row">
+            <input id="email" type="text" placeholder="Email" required />
+          </div>
+        </div>
+        <div class="formControl">
+          <div class="row">
+            <label for="password">Password</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <div class="row">
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="bottom">
+        <div class="line">
+          <span>or continue with</span>
+        </div>
+        <a href="#">
+          <img src="/imgs/google.svg" alt="Google" />
+          <span>Continue with google</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
